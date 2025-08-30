@@ -27,18 +27,17 @@ h1 {
     height: auto;
 }
 
+/* --- MODIFICATO PER RENDERE LE AREE INVISIBILI --- */
 .clickable-area {
     position: absolute;
-    background-color: rgba(0, 123, 255, 0.2); /* Colore blu semi-trasparente */
-    border: 1.5px dashed #007bff; /* Bordo blu tratteggiato */
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    cursor: pointer; /* Unica indicazione visiva rimasta (il cambio del mouse) */
+    /* Rimosso background-color e border per renderla invisibile */
     box-sizing: border-box;
 }
 
+/* Rimuoviamo anche l'effetto hover che cambiava colore */
 .clickable-area:hover {
-    transform: scale(1.02);
-    background-color: rgba(0, 123, 255, 0.4); /* Blu più intenso all'hover */
+    /* L'effetto di ingrandimento è stato rimosso per non dare un feedback visivo */
 }
 
 .tooltip {
@@ -53,19 +52,19 @@ h1 {
     white-space: nowrap;
 }
 
-/* --- NUOVI STILI PER LA FINESTRA MODALE (LIGHTBOX) --- */
+/* Stili per la finestra modale (nessuna modifica qui) */
 
 .modal-overlay {
-    position: fixed; /* Si posiziona rispetto alla finestra del browser */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Sfondo nero semi-trasparente */
-    display: none; /* Nascosto di default */
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
     justify-content: center;
     align-items: center;
-    z-index: 2000; /* Sopra tutto il resto */
+    z-index: 2000;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -98,7 +97,7 @@ h1 {
 
 #modal-image {
     max-width: 100%;
-    max-height: 75vh; /* Limita l'altezza per lasciare spazio al pulsante */
+    max-height: 75vh;
     margin-bottom: 20px;
 }
 
@@ -118,5 +117,5 @@ h1 {
 }
 
 .modal-button.hidden {
-    display: none; /* Nasconde il pulsante se non c'è link */
+    display: none;
 }

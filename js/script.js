@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalLink = document.getElementById('modal-link');
     const modalClose = document.querySelector('.modal-close');
 
-    // --- COORDINATE FINALI DA GIMP (SECONDA REVISIONE) ---
+    // --- COORDINATE AMPLIATE DEL 5% ---
     const clickableAreasData = [
         {
             name: 'EditorSpartitoOnline',
             shape: 'rect',
-            coords: '242,274,446,452', // <-- Da GIMP
+            coords: '237,265,451,461', // <-- Ingrandita del 5%
             imageUrl: 'images/EditorSpartitoOnline.png',
             externalUrl: 'https://beyerop101.com/editor-spartito-online/',
             description: 'Visualizza i dettagli dell\'Editor di Spartiti Online'
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'MidiEditor',
             shape: 'rect',
-            coords: '236,498,432,670', // <-- Da GIMP
+            coords: '231,489,437,679', // <-- Ingrandita del 5%
             imageUrl: 'images/MidiEditor.png',
             externalUrl: null, 
             description: 'Visualizza i dettagli del MIDI Editor'
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'PentagrammaInterattivo',
             shape: 'rect',
-            coords: '234,816,444,990', // <-- Da GIMP
+            coords: '229,807,449,999', // <-- Ingrandita del 5%
             imageUrl: 'images/PentagrammaInterattivo.png',
             externalUrl: 'https://beyerop101.com/pentagramma-interattivo/',
             description: 'Visualizza i dettagli del Pentagramma Interattivo'
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'SpartitoPrincipale',
             shape: 'rect',
-            coords: '572,628,872,890', // <-- Da GIMP
+            coords: '565,621,879,897', // <-- Ingrandita del 5%
             imageUrl: 'images/SpartitoPrincipale.png',
             externalUrl: 'https://beyerop101.com/midi-trasformer/',
             description: 'Visualizza lo spartito e il MIDI Transformer'
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'IAPianoTutor',
             shape: 'rect',
-            coords: '1392,640,1682,896', // <-- Da GIMP
+            coords: '1385,633,1689,903', // <-- Ingrandita del 5%
             imageUrl: 'images/IAPianoTutor.png',
             externalUrl: 'https://beyerop101.com/iapiano-tutor/',
             description: 'Visualizza i dettagli dell\'IA Piano Tutor'
